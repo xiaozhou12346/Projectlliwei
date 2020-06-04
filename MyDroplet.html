@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1, use-scalable=no">
+    <!--翻译-->
+    <title>081417105李伟</title>
+    <!--用来加载外部资源-->
+    <!--绝对路径：完整路径 相对路径：从本文件出发去找-->
+    <link rel="short icon" href="Resource/icon.png">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <style>
+        /*<!--设置参照物-->*/
+        .MD_external_div{
+            position: relative;
+        }
+        .MD_inner_div{
+            width: 66px;
+            height: 120px;
+            left:50% ;
+            top: 50%;
+            margin-top: -60px;
+            margin-left: -33px;
+            /*左上角坐标跑偏，在回去*/
+            /*transform:translate(-50%,-50%)*/
+            position: absolute;
+            text-align: center;
+        }
+        button{
+            background-color: rgb(40,133,202);
+            width: 66px;
+            height: 20px;
+        }
+        .MD_third_div{
+            border: 1px solid #dddddd;
+            height: 50px;
+            width: 90%;
+            border-radius: 5px;
+            background: white;
+            margin: 0 auto;
+            line-height: 50px;
+            margin-top: 10px;
+        }
+        /*float：浮动*/
+        .MD_left_img{
+            float:left;
+            margin-left: 10px;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+        .MD_right_img{
+            float:right;
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <span>平台风采</span>
+</header>
+
+<!--第二部分-->
+<div class="MD_external_div">
+    <img src="Resource/banner5.png" alt="" style="width: 100%">
+    <div class="MD_inner_div">
+        <img src="Resource/head.png" alt="">
+        <span  id="name">081417105李伟</span>
+        <button id="btn">退出登录</button>
+    </div>
+</div>
+
+<!--第三部分-->
+<div class="MD_third_div">
+    <img src="Resource/gr_1.png" alt="" class="MD_left_img">
+    <span>我的客户</span>
+    <img src="Resource/jt.png" alt="" class="MD_right_img">
+</div>
+<div class="MD_third_div">
+    <img src="Resource/gr_2.png" alt="" class="MD_left_img">
+    <span>我的余额</span>
+    <img src="Resource/jt.png" alt="" class="MD_right_img">
+</div>
+<div class="MD_third_div">
+    <img src="Resource/gr_3.png" alt="" class="MD_left_img">
+    <span>注册客户</span>
+    <img src="Resource/jt.png" alt="" class="MD_right_img">
+</div>
+<div class="MD_third_div">
+    <img src="Resource/gr_4.png" alt="" class="MD_left_img">
+    <span>修改密码</span>
+    <img src="Resource/jt.png" alt="" class="MD_right_img">
+</div>
+
+<!--获取用户名-->
+<script>
+    // var info=document.getElementById("name");
+    // var name=window.localStorage.getItem("userinfo");
+    // info.innerHTML=name;
+    var btn=document.getElementById("btn");
+    btn.onclick=function (){
+        location.href="index.html"
+    }
+</script>
+
+<footer>
+    <a href="DropletService.html"><img src="Resource/nav10.png" alt=""> <span>小滴服务</span> </a>
+    <a href="EnterpriseProject.html"><img src="Resource/nav20.png" alt=""> <span>企业项目</span> </a>
+    <a href="ServiceProcedure.html"><img src="Resource/nav30.png" alt=""> <span>服务流程</span> </a>
+    <a href="PlatformMien.html"><img src="Resource/nav40.png" alt=""> <span>平台风采</span> </a>
+    <a href=""><img src="Resource/nav51.png" alt=""> <span  style="color: red">我的小滴</span> </a>
+</footer>
+</body>
+</html>
